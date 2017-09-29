@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Tango extends Application
+class India extends CI_Controller
 {
 
 	function __construct()
@@ -9,12 +9,13 @@ class Tango extends Application
 		parent::__construct();
 	}
 
-	/**
-	 * Homepage for our app
-	 */
 	public function index()
 	{
-        $this->show(5);
+        $source = '../data/logo.png';
+
+        header("Content-type: image/png");
+        header('Content-Disposition: inline');
+        readfile($source);
 	}
 
 }
