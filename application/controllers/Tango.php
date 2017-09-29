@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Force extends Application
+class Tango extends Application
 {
 
 	function __construct()
@@ -11,7 +11,7 @@ class Force extends Application
 
 	public function index()
 	{
-        $this->show(4);
+        $this->show(5);
 	}
 
 }
